@@ -209,7 +209,7 @@ async function renderNotes() {
     activeNotesGrid.innerHTML = "";
     if (activeNotes.length === 0) {
       activeNotesGrid.innerHTML =
-        '<p style="text-align: center">Tidak ada catatan aktif</p>';
+        '<p style="text-align: center">No Active Notes</p>';
     } else {
       activeNotes.forEach((note) => {
         const noteItem = document.createElement("note-item");
@@ -226,7 +226,7 @@ async function renderNotes() {
     archivedNotesGrid.innerHTML = "";
     if (archivedNotes.length === 0) {
       archivedNotesGrid.innerHTML =
-        '<p style="text-align: center">Tidak ada catatan terarsip</p>';
+        '<p style="text-align: center">No Archived Notes</p>';
     } else {
       archivedNotes.forEach((note) => {
         const noteItem = document.createElement("note-item");
